@@ -20,12 +20,12 @@ public class Triangle extends Figures{
 
     return planeArea;
 
-    };
+    }
 
     @Override
     public void printArea () {
         System.out.println("Площадь треугольника равна " + planeArea);
-    };
+    }
 
 }
 

@@ -4,5 +4,5 @@ public class Figures {
 
     protected void printArea () {
        System.out.println("Площадь фигуры равна " + planeArea);
-    };
+    }
 }
