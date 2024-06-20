@@ -1,6 +1,6 @@
 import static java.lang.Math.sqrt;
 
-public class Triangle extends figures{
+public class Triangle extends Figures{
 
     public int a;
     public int b;
@@ -12,12 +12,20 @@ public class Triangle extends figures{
         this.c = c;
     }
 
-        public double planeArea (int a, int b, int c) {
-        double p = (double) (a + b + c) / 2;
+    public double planeArea () {
 
-        double planeArea = sqrt(p * (p - a) * (p - b) * (p - c));
+    double p = (double) (this.a + this.b + this.c) / 2;
+
+    super.planeArea = sqrt(p * (p - this.a) * (p - this.b) * (p - this.c));
+
+    return planeArea;
+
+    };
+
+    @Override
+    public void printArea () {
         System.out.println("Площадь треугольника равна " + planeArea);
-        return planeArea;
-    }
+    };
+
 }
 

@@ -1,14 +1,18 @@
-import static java.lang.Math.sqrt;
-
-public class Square extends figures{
+public class Square extends Figures{
     public int x;
     Square (int x){
         this.x = x;
     };
 
-    public int planeArea (int x) {
-        int planeArea = x * x;
-        System.out.println("Площадь квадрата равна " + planeArea);
+    public double planeArea () {
+
+        super.planeArea = (double) this.x * this.x;
+
         return planeArea;
+    };
+
+    @Override
+    protected void printArea () {
+        System.out.println("Площадь квадрата равна " + planeArea);
     };
 }
